@@ -1,17 +1,14 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <meta charset="utf-8">
-
-<script src="d3.min.js"></script>
-<script>
-
-<head>
-<meta charset+"UTF-8">
-<meta name+"viewpoint" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Document</title>
-
-</head>
-
+<title>Circle Packing, Bubble Chart</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
 <body>
-<input type="button" value="pink" onclick="alert('white')">
-</body>
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const runtime = new Runtime();
+const main = runtime.module(define, Inspector.into(document.body));
+
+</script>
